@@ -18,9 +18,19 @@ function adicionar() {
     campo.focus();
 }
 
+
 function sortear() {
-    // Faremos esta função na próxima etapa.
+    if (amigos.length < 2) {
+        alert("Adicione pelo menos dois amigos para sortear.");
+        return;
+    }
+
+    let indice = Math.floor(Math.random() * amigos.length);
+    let escolhido = amigos[indice];
+
+    document.getElementById("lista-sorteio").textContent = escolhido;
 }
+
 
 function reiniciar(evento) {
     // Faremos esta função na próxima etapa.
