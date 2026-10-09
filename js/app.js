@@ -33,6 +33,15 @@ function sortear() {
 
 
 function reiniciar(evento) {
-    // Faremos esta função na próxima etapa.
+    evento.preventDefault();
+
+    amigos.length = 0;
+
+    document.getElementById("nome-amigo").value = "";
+    document.getElementById("lista-amigos").textContent = "";
+    document.getElementById("lista-sorteio").textContent = "";
+
+    document.getElementById("nome-amigo").focus();
 }
+
 
