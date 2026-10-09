@@ -1,7 +1,7 @@
 const amigos = [];
 
 function adicionar() {
-    let campo = document.getElementById("nome");
+    let campo = document.getElementById("nome-amigo");
     let nome = campo.value.trim();
 
     if (nome === "") {
@@ -9,18 +9,20 @@ function adicionar() {
         return;
     }
 
-    nomes.push(nome);
+    amigos.push(nome);
 
-    document.getElementById("listaNomes").textContent = nomes.join(", ");
+    document.getElementById("lista-amigos").textContent =
+        amigos.join(", ");
 
     campo.value = "";
     campo.focus();
 }
 
 function sortear() {
-  // TODO validar escolher e exibir
+    // Faremos esta função na próxima etapa.
 }
 
 function reiniciar(evento) {
-  // TODO impedir a navegação e restaurar o estado
+    // Faremos esta função na próxima etapa.
 }
+
